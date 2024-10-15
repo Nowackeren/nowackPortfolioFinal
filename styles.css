@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: #2B2F39;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .header nav{
+        display: flex;
+        gap: 10px;
+    }
+    .header nav ul{
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        margin-left: 40px;
+    }
+    .header nav ul li{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 18px;
+        border-bottom: 3px solid transparent;
+        transition: border-color 0.2s ease;
+    }
+    .header nav ul li:hover{
+        border-bottom-color: #f8eb57; 
+    }
+    .header nav ul li a{
+     text-decoration: none;
+     color: #fff;
+    }
+
+    .hamburger-card {
+        display: none;
+      }
+
+    @media (max-width: 1280px) {
+        .header{
+            padding: 20px 25px;
+        }
+        .header nav{
+            display: none;
+        }
+        main{
+          padding: 20px 25px;
+        }
+        footer{
+            padding: 20px 25px;
+        }
+        .footer-content{
+            flex-direction: column;
+            gap: 40px;
+        padding: 0;
+        }
+        .SoMe{
+           flex-direction: column;
+           gap: 20px;
+        }
+        .hamburger-card {
+            display: block;
+          }
+        
+          .hamburger {
+            display: block;
+            height: 40px;
+            z-index: 20;
+            position: absolute;
+            top: 28px;
+            right: 25px;
+          }
+        
+          .hamburger-content {
+            display: none;
+            flex-direction: column;
+            width: 100vw;
+            gap: 30px;
+            position: relative;
+            top: 30px;
+            text-align: center;
+            padding: 0;
+            padding-bottom: 20px;
+            background-color: var(--main-white);
+          }
+        
+          .hamburger-card.open .hamburger-content {
+            display: flex;
+          }
+        
+          .hamburger-card a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s ease;
+          }
+          .hamburger-card a:hover{
+            border-bottom-color: #f8eb57; 
+           }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10%;
+            
+  
+            
+
+        }
+        
+       
+        .textDiv {
+            margin-left: 10%;
+        }
+
+        .imgDiv {
+            color: #fff;
+           text-align: center;
+margin-right: 10%;
+    
+       
+   
+        }
+
+        .imgDiv h2 {
+        margin-bottom: 25px;
+        }
+        
+      
+        
+    
+        
