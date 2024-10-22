@@ -49,84 +49,14 @@ p {
         border-bottom: 3px solid transparent;
         transition: border-color 0.2s ease;
     }
+    /* hover effekt med linje */
     .header nav ul li:hover{
-        border-bottom-color: #f8eb57; 
+        border-bottom-color: rgb(74, 144, 226); 
     }
     .header nav ul li a{
      text-decoration: none;
      color: #fff;
     }
-
-    .hamburger-card {
-        display: none;
-      }
-
-    @media (max-width: 1280px) {
-        .header{
-            padding: 20px 25px;
-        }
-        .header nav{
-            display: none;
-        }
-        main{
-          padding: 20px 25px;
-        }
-        footer{
-            padding: 20px 25px;
-        }
-        .footer-content{
-            flex-direction: column;
-            gap: 40px;
-        padding: 0;
-        }
-        .SoMe{
-           flex-direction: column;
-           gap: 20px;
-        }
-        .hamburger-card {
-            display: block;
-          }
-        
-          .hamburger {
-            display: block;
-            height: 40px;
-            z-index: 20;
-            position: absolute;
-            top: 28px;
-            right: 25px;
-          }
-        
-          .hamburger-content {
-            display: none;
-            flex-direction: column;
-            width: 100vw;
-            gap: 30px;
-            position: relative;
-            top: 30px;
-            text-align: center;
-            padding: 0;
-            padding-bottom: 20px;
-            background-color: var(--main-white);
-            margin-bottom: 50px;
-          }
-        
-          .hamburger-card.open .hamburger-content {
-            display: flex;
-          }
-        
-          .hamburger-card a {
-            font-size: 18px;
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            border-bottom: 3px solid transparent;
-            transition: border-color 0.2s ease;
-          }
-          .hamburger-card a:hover{
-            border-bottom-color: #f8eb57; 
-           }
-        }
 
         * {
             margin: 0;
@@ -190,9 +120,9 @@ margin-right: 10%;
       flex-direction: column;
       vertical-align: top;
       height: auto;
-      border: 1px solid black;
-      background-color: rgb(74, 144, 226);
-      border-radius: 10px;
+      border-radius: 25px;
+        border: 1px solid rgb(49, 49, 49);
+        box-shadow: 1px 1px 10px 0px;
       
     }
     .kasse p {
@@ -252,7 +182,10 @@ margin-right: 10%;
       }
 
       .webudviklingCases {
-        background-color: rgb(74, 144, 226);
+        
+        border-radius: 25px;
+        border: 1px solid rgb(49, 49, 49);
+        box-shadow: 1px 1px 10px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -260,6 +193,7 @@ margin-right: 10%;
         
         margin-left: 20%;
         margin-right: 20%;
+        margin-bottom: 100px;
       }
 
       
@@ -288,9 +222,22 @@ margin-right: 10%;
       footer {
       text-align: center;
       background-color: rgb(74, 144, 226);
+      padding: 50px; 
+      text-align: center;
+      }
+
+      footer div {
+      max-width: 1200px; 
+      margin: auto;
       }
 
       footer a {
       color: #fff;
       font-size: 20px;
+      }
+
+      footer img {
+      width: 40px; 
+      height: 40px; 
+      vertical-align: middle;
       }
