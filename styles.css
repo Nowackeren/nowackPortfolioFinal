@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
 background-color: #2B2F39;
 }
@@ -32,10 +33,7 @@ p {
     padding: 20px 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    .header nav{
-        display: flex;
-        gap: 10px;
-    }
+ 
     .header nav ul{
         display: flex;
         gap: 50px;
@@ -76,9 +74,6 @@ p {
             align-items: center;
             margin-top: 100px;
             margin-bottom: 100px;
-  
-            
-
         }
         
        
@@ -241,3 +236,108 @@ margin-right: 10%;
       height: 40px; 
       vertical-align: middle;
       }
+
+      .textDivMobile {
+        display: none;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        * {
+        
+        }
+
+        .textDivMobile {
+          display: contents;
+          margin: 0;
+    text-align: center;
+    margin-bottom: 0px;
+        }
+
+        .textDivMobile h1 {
+          margin-top: 30px;
+          font-size: 30px;
+          color: #fff;
+        }
+      
+        .textDivMobile h2 {
+          font-size: 20px;
+        } 
+
+        .header {
+          padding: 20px 20px;
+        }
+
+        .header nav ul{
+          
+          gap: 30px;
+         
+          margin-left: 40px;
+      }
+      .header img {
+        width: 90%;
+      }
+      .header nav ul li{
+        
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .container {
+      display: block;
+      margin-top: 0px;
+  }
+
+  .textDiv {
+    display: none;
+    
+  }
+
+
+  .imgDiv {
+    margin-right: 0%;
+  }
+
+  .imgDiv img {
+    width: 90%;
+  }
+
+  .caseOverskrift {
+    margin-left: 6%;
+  }
+
+  .overkasse {
+  display: block;
+  width: 90%;
+
+  }
+
+  .kasse {
+  margin-bottom: 40px;
+  }
+
+  .whoAmI {
+    color: #fff;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+        .webudviklingCases {
+          margin: auto;
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          
+          
+          margin-bottom: 100px;
+        }
+
+        .webudviklingCases p {
+          width: 400px;
+          }
+      }
+    
+    
